@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    grid-template-areas: "header header" "main aside" "footer footer";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 7% 86% 7%;
+}
+
+header{
+    height: 7vh;
+    background-color: rgb(32, 151, 151);
+    grid-area: header;
+
+    display: grid;
+    grid-template-areas: "Item1 Item2 .";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+ul{
+    list-style: none;
+}
+
+.item1{
+    grid-area: Item1;
+    font-size: 2vw;
+    color: white;
+}
+
+.item2{
+    grid-area: Item2;
+    font-size: 1.5vw;
+    color: white;
+    justify-self: center;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    height: auto;
+    background-color: #fff3d9;
+    grid-area: aside;
+}
+
+#informaçoes_3{
+    width: 20vw;
+    height: 25vh;
+    float: left;
+
+    margin-left: 8%;
+}
+
+#informaçoes_4{
+    width: 20vw;
+    height: 20vh;
+    float: left;
+    background-color:  white;
+    margin-left: 10%;
+    margin-top: 15%;
+    box-shadow: 1px 3px 8px 1px #585656;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 86vh;
+    background-color: #fff3d9;
+    grid-area: main;
+}
+
+.item3{
+    grid-area: Item3;
+    font-size: 1.5vw;
+    color: rgb(0, 0, 0);
+    justify-self: center;
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+
+#informaçoes_1{
+    width: 15vw;
+    height: 30vh;
+    float: left;
+    margin-right: 8%;
+
+    box-shadow: 1px 3px 8px 1px #2f2d2d;
+    overflow:hidden;
+    border-radius: 100vw;
+}
+
+#informaçoes_2{
+    width: 20vw;
+    height: 20vh;
+    float: left;
+    background-color: white;
+    margin-right: 10%;
+    box-shadow: 1px 3px 8px 1px #585656;
+}
+
+footer{
+    height: 7vh;
+    background-color: rgb(32, 151, 151);
+    grid-area: footer;
+}
