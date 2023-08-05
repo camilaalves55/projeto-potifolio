@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: lightgray;
+}
+
+header{
+    height: 5%;
+    border: groove;
+}
+
+.título{
+    background-color: #8d3c14;
+    color: white;
+    height: 20px;
+    font-size: small;
+    display: block;
+    text-align: center;
+}
+
+#item{
+    text-decoration: none;
+    color: black;
+    justify-content: space-evenly;
+}
+
+#sign-in{
+    color: #8d3c14;
+}
+
+.exclusive{
+    color: black;
+}
+
+#busca{
+    float:left;
+    color: black;
+    padding: 4px;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 20px;
+    width: 200px;
+    background-color: lightgrey;
+}
+
+input::placeholder{
+    color: black;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+    border: all solid black;
+}
+
+.info{
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightgrey;
+}
+
+.informacoes{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-left: 20%;
+    margin-top: 15%;
+}
+
+.log{
+    margin-bottom: 7px;
+    font-size: xx-large;
+    font-weight: bold;
+    width: 100%;
+}
+
+.enter{
+    margin-bottom: 5px;
+    font-size: larger;
+}
+
+#email{
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 80%;
+    padding: 5px;
+}
+
+#password{
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 80%;
+    padding: 5px;
+    margin-top: 6px;
+}
+
+.log-in{
+    border-radius: 30px;
+    border: 2px solid #8d3c14;
+    color: white;
+    width: 33%;
+    height: 40px;
+    padding: 4px;
+    margin-top: 8px;
+    background-color: #8d3c14;
+    margin-right: 6px;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px #702f0e;
+}
+
+.forget-password{
+    border-radius: 30px;
+    border: 2px solid #8d3c14;
+    color: white;
+    width: 47%;
+    height: 40px;
+    padding: 4px; 
+    margin-top: 8px;
+    background-color: #8d3c14;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px #702f0e;
+}
+
+a{
+    text-decoration: none;
+}
+
+button:active{
+    box-shadow: 0 0 0 0 #702f0e, inset 2px 2px 2px #702f0e;
+}
+
+main{
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+#logo{
+    width: 43%;
+}
+
+footer{
+    background-color: #8d3c14;
+    color: white;
+    position: relative;
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+
+ol{
+    list-style: none;
+}
+
+li{
+    margin-bottom: 2px;
+    font-size: small;
+}
+
+.principais{
+    font-weight: 500;
+    font-size: large;
+    margin-bottom: 4px;
+}
+
+#enter-email{
+    border-radius: 2px;
+    border: 1px solid white;
+    width: 60%;
+    padding: 5px;
+    background-color: #8d3c14;
+    color: white;
+}
+
+#enter-email::placeholder{
+    color: white;
+}

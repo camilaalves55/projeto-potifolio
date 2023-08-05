@@ -1,51 +1,36 @@
 *{
-    margin:  0;
+    margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
 }
 
 body{
-    background-color: #EEB5EB;
+    display: grid;
+    grid-template-areas: "header header" "main aside" "footer footer";
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 15% 70% 15%;
 }
 
-header{
+#header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    text-decoration: none;
-    height: 12vh;
     background-color: #D3B5E5;
 }
 
-main{
-    display: flex;
-    justify-content: space-around;
+header{
+    height: 15vh;
+    grid-area: header;
+    display: grid;
+    grid-template-areas: "Item1 Item2 .";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 a{
     text-decoration: none;
     color: black;
+    margin-left: 10%;
 }
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    width: 20vw;
-}
-
-h2{
-    font-weight: bold;
-    color: black;
-}
-
-#img1{
-    margin-left: 0px;
-    margin-top: 5px;
-    width: 40vw;
-    height: 40vh;
-}
-
 
 #txtBusca{
     background-color: #EEB5EB;
@@ -58,10 +43,30 @@ h2{
     width: 200px;
 }
 
-#texto{
-    color: black;
-    text-decoration: none;
-    font-size: 15px;
+
+.item1{
+    grid-area: Item1;
+    font-size: 5vw;
+    color: white;
+}
+
+.item2{
+    grid-area: Item2;
+    font-size: 5vw;
+    color: white;
+    justify-self: center;
+}
+
+aside{
+    height: auto;
+    background-color: #F8BDFF;
+    grid-area: aside;
+}
+
+main{
+    height: 70vh;
+    background-color: #EEB5EB;
+    grid-area: main;
 }
 
 audio{
@@ -77,49 +82,23 @@ section{
 }
 
 h5{
-    
     margin-left: -290px;
     margin-top: 15px;
     margin-bottom: -5px;
 }
 
-h3{
-    align-items: center;
-    margin-left: 350px;
-    margin-top: -80px;
-    margin-bottom: 20px;
-}
-
 #informaçoes_2{
     display: flex;
     flex-direction: double column;
-    margin-top: 200px;
-    margin-left: -600px;
-    margin-bottom: 20px;
-}
-
-.formulario{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    height: auto;
+    grid-area: main;
+    margin-top: 0px;
+    margin-left:10px;
+    margin-bottom: 0px;
 }
 
 footer{
-    height: 10%;
+    height: 15vh;
     background-color: #D3B5E5;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color: black;
-    height: 100px;
-    margin-top: 0vh;
-}
-
-ol{
-    list-style: none;
-}
-
-li{
-    margin-bottom: 2px;
-    font-size: small;
+    grid-area: footer;
 }
